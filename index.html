@@ -22,9 +22,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);
 .logo strong{display:block;font-size:16px;font-weight:700;color:#fff}
 .logo span{font-size:10px;color:rgba(255,255,255,.5);letter-spacing:1.2px;text-transform:uppercase}
 .nav{display:flex;gap:6px}
-.hdr-contact{display:flex;align-items:center;gap:6px;color:rgba(255,255,255,.85);font-size:13px;font-weight:500;text-decoration:none;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);padding:6px 13px;border-radius:20px;transition:all .18s;white-space:nowrap}
-.hdr-contact:hover{background:rgba(255,255,255,.2);color:#fff}
-@media(max-width:480px){.hdr-contact span{display:none}}
 .nb{padding:7px 15px;border-radius:6px;font-size:13px;font-weight:500;cursor:pointer;border:none;font-family:inherit;transition:all .18s}
 .nb.on,.nb:hover{background:var(--gold);color:var(--g)}
 .nb:not(.on){background:rgba(255,255,255,.11);color:#fff}
@@ -230,7 +227,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);
         <span>Qurbani 2026</span>
       </div>
     </div>
-    <a href="tel:+923111221192" class="hdr-contact">📞 <span>0311-1221192</span></a>
     <nav class="nav">
       <button class="nb on" onclick="showPg('c',this)">Track Order</button>
       <button class="nb" onclick="showPg('a',this)">Admin</button>
@@ -315,9 +311,9 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);
   <div class="hero">
     <div class="live-pill"><div class="live-dot"></div> Live Tracking</div>
     <h1>Track status of your Qurbani</h1>
-    <p>Please enter bill number to track status of your Qurbani</p>
+    <p>Enter bill number to track status of your Qurbani</p>
     <div class="sc">
-      <label>Bill / Booking Number</label>
+      <label>Bill Number</label>
       <div class="srow">
         <input class="si" id="si" type="text" placeholder="e.g. 5760" maxlength="10"
           onkeydown="if(event.key==='Enter')doSearch()">
@@ -551,7 +547,7 @@ function buildCard(o){
         <div class="di full"><div class="dl">Delivery Address</div><div class="dv">${o.address||'—'}</div></div>
       </div>
     </div>
-    <div class="cfoo"><span>Questions?</span><a href="tel:+923111221192">0311-1221192</a></div>
+    <div class="cfoo"><span>Thank you for choosing Pak Meat, Eid Mubarak!</span></div>
   </div>`;
 }
 
